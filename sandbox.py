@@ -1,9 +1,6 @@
-print('hello world')
+print('Python Sandbox')
 
-a = 1
-b = a
 
-print(a, b)
 
-a = 2
-print(a, b)
+
+

@@ -1,0 +1,7 @@
+example data file line 1
+example data file line 2
+example data file line 3 (next line is empty)
+
+example data file line 4 (previous line is empty)
+example data file line 5
+example data file line 6 (last line)

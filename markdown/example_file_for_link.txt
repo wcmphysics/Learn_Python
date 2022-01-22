@@ -1,0 +1,1 @@
+This is an example file for linking a file in markdown text.

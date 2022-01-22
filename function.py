@@ -1,0 +1,29 @@
+# declaration of a function:
+# arguments without default values must be declared first, and then arguments with default values.
+# use pass for an empty function
+def this_is_a_function(argument1, argument2, argument3, argument_with_default_value = 10):
+	""" Title of the doc string (this is PEP 484 type annotations).
+
+	Args:
+		argument1: Describe this argument here.
+		argument2: Describe this argument here.
+
+	Returns:
+		Describe what is returned
+
+	"""
+	print('Some operations inside a function')
+	return 'Return something'
+
+
+# calling a function
+# ordinary arguments (or positional arguments) are called: 'arg'
+# key-word arguments are called: 'kwarg'
+# args must be supplied first, and then kwargs
+# args are first read in according to their positions, and then kwarg are read in
+# if all arguments are supplied as key-word arguments, then order doesn't matter.
+
+positional_argument1 = 1
+positional_argument2 = 2
+key_word_argument = 3
+this_is_a_function(positional_argument1, positional_argument2, argument3 = key_word_argument)

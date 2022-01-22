@@ -69,6 +69,8 @@ class Car:
 # creating instances of a class
 car1 = Car('BMW', 50000)
 car2 = Car('Benz', 40000)
+# check what attributes and methods are available for the class using dir():
+print(dir(car1))
 
 # you can also add more attributes to an instance of a class directly
 car1.color = 'red'
@@ -77,9 +79,13 @@ print(car1.color)
 print(car1.discount) 
 # this is the variable 'discount' of the class
 print(Car.discount)
-# here car2 has the attribute discount so python doesn't return the discount in the class.
+# here car2 has been assigned an attribute discount so python doesn't look for the discount in the class.
 car2.discount = 0.2
+# keep in mind that the above expression creates an attribute 'discount' for car2, and 
+# it does not mean to referr to discount in Car class and modify it.
 print(car2.discount)
+print(Car.discount)
+exit()
 # show the name space of an object to see what content the object has
 print(car1.__dict__)
 
@@ -131,7 +137,7 @@ class RaceCar(Car):
 		# specifying the operations for some variables to those in the parent class
 		# so 'brand' and 'price' will be handled acoording to the __init__ in the class Car
 		super().__init__(brand, price)
-		# another way to do the above is (may only work in one-layer subclass):
+		# another way to do the above is:
 		#Car.__init__(self, brand, price)
 		self.TimeTo100KM = TimeTo100KM
 
