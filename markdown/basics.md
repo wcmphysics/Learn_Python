@@ -65,7 +65,7 @@ or just using tabs (note the newline before tabs):
 
 
 # Table
-You can create a table just by using `|` (note that line can be inserted by one or many `-`):
+You can create a table by creating many `|-|` indicating the number of columns (note that line can be inserted by one or many `-`):
 | | column 1 | column 2 |
 |-------|---------|-|
 | row 1 | content | content |
