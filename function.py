@@ -27,3 +27,17 @@ positional_argument1 = 1
 positional_argument2 = 2
 key_word_argument = 3
 this_is_a_function(positional_argument1, positional_argument2, argument3 = key_word_argument)
+
+# functions as input
+# you can use expansion (*args or **kwargs) to pass the input of the passed function
+
+def function_as_input(passed_function, arguments_for_passed_function):
+	print(passed_function(*arguments_for_passed_function))
+
+def summation(a, b):
+	return a+b
+def multiplication(a, b):
+	return a*b
+
+function_as_input(summation, (2, 3)) # this performs summation
+function_as_input(multiplication, (2, 3)) # this performs multiplication
