@@ -16,6 +16,11 @@ print('Return type of exponentiation depends on its inputs:', 2**2, 2**2.0)
 print('This gives 3 (return the integer part of the division):', 11//3)
 # remainder (modulo): %
 print('This gives 2:', 5%3)
+# note that modulo in python use floor definition for quotient (see wiki "modulo" and search "floored division")
+# therefore, the remainder always has the same sign as the divisor
+print('This gives  1 (qotient = floor(-1.66...) = -2):', -5%3)
+print('This gives -1 (qotient = floor(-1.66...) = -2):', 5%-3)
+print('This gives -2 (qotient = floor(1.66... ) = 1 ):', -5%-3)
 # +=, -=, *=, /=, **=, //=, and %= are all valid abbreviation
 a = 3
 a += 2 # a = a + 2
@@ -31,7 +36,7 @@ try:
 except:
 	print('Error!')
 # round-up (四捨五入)
-print('Round-up with specified number of digits (this returns 3.1416):', round(3.14159, 4))
+print('Round-up with specified number of digits under decimal point (this returns 3.1416):', round(3.14159, 4))
 
 
 
